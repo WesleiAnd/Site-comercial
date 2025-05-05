@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!-- Declara que este documento é um HTML5 -->
+
+<html lang="pt-br">
+<!-- Início do documento HTML, com idioma definido como português do Brasil -->
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- Define a codificação de caracteres para UTF-8 (compatível com acentos, símbolos, etc.) -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Garante que a página seja responsiva em dispositivos móveis -->
+
+  <title>Contato - Padaria Delícias</title>
+  <!-- Título da aba do navegador -->
+
+  <link rel="stylesheet" href="../css/style.css" />
+  <!-- Importa o arquivo de estilos CSS localizado na pasta "css", um nível acima -->
+</head>
+
+<body>
+<!-- Início do conteúdo visível da página -->
+
+<header id="contato-header">
+  <!-- Cabeçalho da página com ID exclusivo para estilização -->
+
+  <h1 class="contato-titulo">Fale Conosco</h1>
+  <!-- Título principal da seção de contato -->
+
+  <p class="contato-subtitulo">Estamos prontos para atender você com carinho!</p>
+  <!-- Subtítulo explicando o propósito da página -->
+</header>
+
+<main id="contato-main">
+  <!-- Área principal da página com ID exclusivo -->
+
+  <section id="contato-infos">
+    <!-- Seção com informações de contato da padaria -->
+
+    <h2 class="contato-secao-titulo">Informações de Contato</h2>
+    <!-- Título da seção de informações -->
+
+    <p class="contato-item">📍 Rua das Rosas, 123, Centro - São Paulo, SP</p>
+    <!-- Endereço físico da padaria -->
+
+    <p class="contato-item">📞 (11) 1234-5678 | 📱 WhatsApp: (11) 91234-5678</p>
+    <!-- Telefones para contato -->
+
+    <p class="contato-item">✉️ contato@padariadelicias.com</p>
+    <!-- Endereço de e-mail para contato -->
+
+    <p class="contato-item">⏰ Seg a Sáb: 6h às 20h | Dom: 7h às 13h</p>
+    <!-- Horário de funcionamento -->
+  </section>
+
+  <section id="contato-formulario">
+    <!-- Seção com o formulário para o usuário enviar uma mensagem -->
+
+    <h2 class="contato-secao-titulo">Envie uma Mensagem</h2>
+    <!-- Título da seção do formulário -->
+
+    <form id="form-contato" action="#" method="post">
+      <!-- Formulário com ID para estilizar e configurar comportamento -->
+
+      <label for="nome" class="form-label">Nome:</label>
+      <!-- Rótulo para o campo de nome -->
+
+      <input type="text" id="nome" name="nome" class="form-input" placeholder="Digite seu nome" required />
+      <!-- Campo de texto para o nome do usuário, obrigatório -->
+
+      <label for="email" class="form-label">E-mail:</label>
+      <!-- Rótulo para o campo de e-mail -->
+
+      <input type="email" id="email" name="email" class="form-input" placeholder="Digite seu e-mail" required />
+      <!-- Campo de e-mail, obrigatório -->
+
+      <label for="mensagem" class="form-label">Mensagem:</label>
+      <!-- Rótulo para a área de texto da mensagem -->
+
+      <textarea id="mensagem" name="mensagem" class="form-textarea" placeholder="Digite sua mensagem" rows="5" required></textarea>
+      <!-- Área de texto para digitar a mensagem, com 5 linhas visíveis -->
+
+      <button type="submit" class="form-botao">Enviar Mensagem</button>
+      <!-- Botão para enviar o formulário -->
+    </form>
+  </section>
+
+  <section id="contato-mapa">
+    <!-- Seção com mapa do Google Maps -->
+
+    <h2 class="contato-secao-titulo">Como Chegar</h2>
+    <!-- Título da seção do mapa -->
+
+    <iframe
+      class="contato-mapa"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.547817287804!2d-46.63330948498857!3d-23.584905584666936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xabcdef123456789!2sPadaria!5e0!3m2!1spt-BR!2sbr!4v0000000000000"
+      allowfullscreen=""
+      loading="lazy"
+    ></iframe>
+    <!-- Mapa incorporado do Google Maps com carregamento otimizado -->
+  </section>
+
+  <section id="contato-redes">
+    <!-- Seção com links para redes sociais -->
+
+    <h2 class="contato-secao-titulo">Nossas Redes</h2>
+    <!-- Título da seção -->
+
+    <a href="https://www.instagram.com/" class="contato-rede" target="_blank">Instagram</a>
+    <!-- Link para o Instagram, abrindo em nova aba -->
+
+    <a href="https://www.facebook.com/?locale=pt_BR" class="contato-rede" target="_blank">Facebook</a>
+    <!-- Link para o Facebook -->
+
+    <a href="https://www.tiktok.com/login?redirect_url=https%3A%2F%2Fwww.tiktok.com%2Fpt-BR%2F&lang=en&enter_method=mandatory" class="contato-rede" target="_blank">TikTok</a>
+    <!-- Link para o TikTok -->
+  </section>
+</main>
+
+<a href="../index.html" class="voltar">Voltar</a>
+<!-- Link para voltar à página inicial -->
+
+<a id="whatsapp-flutuante" href="https://wa.me/5511912345678" target="_blank" title="Fale conosco no WhatsApp">💬</a>
+<!-- Ícone flutuante do WhatsApp, com link direto para conversa -->
+
+</body>
+</html>
+
+
