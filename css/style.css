@@ -23,12 +23,14 @@ body {
   display: inline-block; /* Adapta o tamanho ao conteúdo */
   padding: 20px; /* Espaço interno */
   border-radius: 10px; /* Bordas arredondadas */
+  
 }
 
 /* Seção de produtos em destaque */
 .destaques {
   text-align: center; /* Centraliza o conteúdo */
   padding: 40px 20px; /* Espaçamento interno */
+  
 }
 
 /* Título da seção de destaques */
@@ -50,6 +52,7 @@ body {
   border-radius: 10px; /* Bordas arredondadas */
   position: relative; /* Permite posicionamento relativo de elementos filhos */
   box-shadow: 0 20px 30px rgba(219, 7, 7, 0.2); /* Sombra vermelha clara */
+  
 }
 
 /* Título e descrição dos produtos */
@@ -435,3 +438,129 @@ body {
 .voltar:hover {
   color: white; /* Muda a cor do link ao passar o mouse */
 }
+
+.final{
+  display: inline-block; /* Faz com que os links fiquem em linha */
+  text-align: center; /* Centraliza o conteúdo */
+  padding: 40px 20px; /* Espaçamento interno */
+  width: 100%; /* Os campos de texto ocupam 100% da largura disponível */
+  padding: 1em; /* Espaçamento interno dentro dos campos */
+  background-color: black; /* Cor clara de fundo */
+}
+
+.final a {
+  border: none; /* Remove a borda padrão do botão */
+  color:white;
+  font-size: 1.2em; /* Tamanho da fonte do botão */
+  border-radius: 5px; /* Bordas arredondadas para o botão */
+  cursor: pointer; /* Mostra o cursor como uma mão ao passar sobre o botão */
+  width: 100%; /* O botão ocupa toda a largura disponível */
+  transition: background-color 0.3s ease; /* Transição suave para a mudança de cor ao passar o mouse */
+}
+
+.final p {
+  color:white;
+}
+
+#modal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 400px;
+  width: 80%;
+  text-align: center;
+}
+
+#fechar-modal{
+  display: inline-block; /* Ocupa apenas o espaço do conteúdo */
+  margin-top: 20px; /* Espaço acima */
+  padding: 12px 24px; /* Espaçamento interno */
+  background-color: #d2691e; /* Cor de fundo */
+  color: #fff; /* Cor do texto */
+  border-radius: 8px; /* Bordas arredondadas */
+}
+
+/* Cor de fundo para toda a navegação */
+.navegacao {
+  background-color: #d2691e; /* Cor de fundo para a área da navegação */
+  padding: 10px 0; /* Adiciona espaçamento interno em cima e embaixo */
+}
+
+.navegacao ul {
+  list-style-type: none; /* Remove as bolinhas padrão */
+  padding: 10x;
+  margin: 0;
+  display: flex; /* Exibe os itens da lista em linha */
+  
+}
+
+.navegacao li {
+  background-color: #d2691e;
+  margin-right: 20px; /* Espaçamento entre os itens */
+}
+
+.navegacao a {
+  text-decoration: none; /* Remove o sublinhado dos links */
+  color: white; /* Cor dos links */
+  font-weight: bold; /* Deixa os links em negrito */
+}
+
+
+/* Estilo para as categorias e produtos */
+.categoria {
+  margin-top: 20px;
+  background-color: #d2691e; /* Cor de fundo */
+}
+
+.produto {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.produto:hover {
+  background-color: #f0f0f0;
+}
+
+/* Modal */
+#modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 80%;
+  max-width: 500px;
+}
+
+
+
+
+  
+  
+
+
+

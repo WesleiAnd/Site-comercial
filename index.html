@@ -8,6 +8,15 @@
 </head>
 
 <body>
+    <!-- Menu de navegação -->
+<nav class="navegacao">
+    <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="pages/produtos.html">Produtos</a></li>
+        <li><a href="pages/sobre.html">Sobre</a></li>
+        <li><a href="pages/contato.html">Contato</a></li>
+    </ul>
+</nav>
 
 <!-- Seção do banner principal da página -->
 <section class="banner">
@@ -22,22 +31,32 @@
     <h2>Nossos Destaques</h2> <!-- Título da seção de destaques -->
 
     <!-- Produto 1: Pães Artesanais -->
-    <div class="produto destaque1"> <!-- Div para o produto "Pães Artesanais", com classe específica para estilo -->
-        <h3>Pães Artesanais</h3> <!-- Nome do produto -->
-        <p>Sabor e textura únicos, feitos com fermentação natural.</p> <!-- Descrição do produto -->
-    </div>
+    <!-- Produto 1 -->
+<div class="produto destaque1" data-nome="Pães Artesanais" data-desc="Nossos pães artesanais são preparados com ingredientes naturais e fermentação lenta, proporcionando casca crocante, miolo macio e um sabor inconfundível. Perfeitos para acompanhar refeições ou simplesmente saborear com manteiga.">
+    <h3>Pães Artesanais</h3>
+    <p>Sabor e textura únicos, feitos com fermentação natural.</p>
+  </div>
+  
+  <!-- Produto 2 -->
+  <div class="produto destaque2" data-nome="Bolos" data-desc="Feitos com carinho e ingredientes frescos, nossos bolos são fofinhos, úmidos e ideais para qualquer momento — do café da manhã a festas especiais. Disponíveis em diversos sabores irresistíveis.">
+    <h3>Bolos</h3>
+    <p>Fofinhos, frescos e perfeitos para qualquer ocasião.</p>
+  </div>
+  
+  <!-- Produto 3 -->
+  <div class="produto destaque3" data-nome="Orelha de Gato" data-desc="Uma verdadeira tradição da nossa padaria: massa crocante frita na hora, coberta com açúcar e canela. A orelha de gato derrete na boca e desperta memórias afetivas em cada mordida.">
+    <h3>Orelha de Gato</h3>
+    <p>Clássico crocante com açúcar e canela que derrete na boca.</p>
+  </div>
+  
 
-    <!-- Produto 2: Bolos -->
-    <div class="produto destaque2"> <!-- Div para o produto "Bolos" -->
-        <h3>Bolos</h3> <!-- Nome do produto -->
-        <p>Fofinhos, frescos e perfeitos para qualquer ocasião.</p> <!-- Descrição do produto -->
-    </div>
-
-    <!-- Produto 3: Orelha de Gato -->
-    <div class="produto destaque3"> <!-- Div para o produto "Orelha de Gato" -->
-        <h3>Orelha de Gato</h3> <!-- Nome do produto -->
-        <p>Clássico crocante com açúcar e canela que derrete na boca.</p> <!-- Descrição do produto -->
-    </div>
+    <div id="modal" style="display: none;">
+        <div class="modal-content">
+          <h3 id="modal-titulo">Título</h3>
+          <p id="modal-descricao">Descrição</p>
+          <button id="fechar-modal">Fechar</button>
+        </div>
+      </div>
 </section>
 
 <!-- Seção de motivos para escolher a padaria -->
@@ -68,6 +87,16 @@
         <p>Tem alguma dúvida, sugestão ou deseja fazer encomendas? Fale com a gente, será um prazer te atender!</p>
         <a href="pages/contato.html" class="botao-contato">Contato</a>
 </section>
+
+<footer class="final">
+
+    <p>Delícias da Vila</p>
+    <p>
+    <a href="https://www.instagram.com/">Instagram</a> | <a href="https://www.facebook.com/?locale=pt_BR">Facebook</a>| <a href="https://www.tiktok.com/login?redirect_url=https%3A%2F%2Fwww.tiktok.com%2Fpt-BR%2F&lang=en&enter_method=mandatory">TikTok</a>
+    </p>
+    <p>Copyright© 2025 Delícias da Vila. WesleiAnd. Todos os direitos reservados..</p>
+</footer>
+  
 <!-- Inclusão do arquivo JavaScript que controla comportamentos da página -->
 <script src="js/padaria.js"></script>
 
