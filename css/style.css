@@ -729,10 +729,15 @@ body {
   display: flex;                               /* Layout flexível */
   justify-content: center;                    /* Centraliza horizontalmente */
   align-items: flex-start;                    /* Alinha itens no topo */
-  flex-wrap: wrap;                            /* Permite quebrar linha */
+  /*flex-wrap: wrap;                            /* Permite quebrar linha */
   gap: 20px;                                   /* Espaço entre os itens */
   padding: 20px;                               /* Espaçamento interno */
+  flex-wrap: nowrap; /* Impede quebra de linha */
+  overflow-x: auto;   /* Permite rolar horizontalmente */
+  width: 20%; /* 5 itens em 100% da largura */
+  min-width: 100%; /* previne que fiquem minúsculos */
 }
+
 
 
   
