@@ -1,10 +1,13 @@
 /* Reset básico para o corpo da página */
 body {
   margin: 0; /* Remove margens padrão do navegador */
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Define a fonte padrão para o site */
-  background-color: #fff; /* Cor de fundo branca */
+  font-family: 'Arial', Tahoma, Geneva, Verdana, sans-serif; /* Define a fonte padrão para o site */
+  background-color: #f4f4f4; /* Cor de fundo branca */
   color: #333; /* Cor padrão dos textos (cinza escuro) */
-}
+  margin: 0; /* Remove a margem padrão do corpo da página */
+  padding: 0; /* Remove o padding padrão do corpo da página */
+  }
+
 
 /* Seção do banner principal */
 .banner {
@@ -31,6 +34,7 @@ body {
   text-align: center; /* Centraliza o conteúdo */
   padding: 40px 20px; /* Espaçamento interno */
   
+  
 }
 
 /* Título da seção de destaques */
@@ -40,28 +44,54 @@ body {
 }
 
 /* Estilo geral dos blocos de produto */
+/* Estilo padrão */
+/* Estilo base para cada item de produto */
 .produto {
-  display: inline-block; /* Permite que os produtos fiquem lado a lado */
-  width: 250px; /* Largura fixa */
-  height: 300px; /* Altura fixa */
-  margin: 20px; /* Espaço ao redor do produto */
-  background-size: cover; /* Faz a imagem de fundo cobrir o produto */
-  background-position: center; /* Centraliza a imagem no fundo */
-  color: white; /* Cor do texto branca */
-  padding: 20px; /* Espaçamento interno */
-  border-radius: 10px; /* Bordas arredondadas */
-  position: relative; /* Permite posicionamento relativo de elementos filhos */
-  box-shadow: 0 20px 30px rgba(219, 7, 7, 0.2); /* Sombra vermelha clara */
-  
+  display: inline-block;                     /* Exibe os elementos um ao lado do outro */
+  width: 250px;                              /* Largura fixa do card */
+  height: 300px;                             /* Altura fixa do card */
+  margin: 20px;                              /* Espaçamento externo ao redor do card */
+  background-size: cover;                    /* Garante que a imagem de fundo cubra toda a área */
+  background-position: center;              /* Centraliza a imagem de fundo */
+  color: white;                              /* Cor do texto */
+  padding: 20px;                             /* Espaçamento interno */
+  border-radius: 10px;                       /* Bordas arredondadas */
+  position: relative;                        /* Necessário para posicionamento interno de elementos filhos */
+  box-shadow: 0 20px 30px rgba(219, 7, 7, 0.2); /* Sombra vermelha suave ao redor do card */
+  cursor: pointer;                           /* Muda o cursor ao passar sobre o item */
 }
 
-/* Título e descrição dos produtos */
+/* Efeito ao passar o mouse por cima do produto */
+.produto:hover {
+  transform: scale(1.2);                     /* Aumenta ligeiramente o tamanho ao passar o mouse */
+}
+
+/* Efeito ao clicar (ativo) - OBS: "pruduto" está escrito errado */
+.produto:active {
+  transform: scale(1.3);                     /* Aumenta ainda mais ao clicar (mas com erro de classe) */
+}
+
+/* Estilo para o título e parágrafo dentro do produto */
 .produto h3,
 .produto p {
-  background-color: rgba(0, 0, 0, 0.6); /* Fundo escuro semitransparente para contraste */
-  padding: 10px; /* Espaçamento interno */
-  border-radius: 5px; /* Bordas arredondadas */
+  background-color: rgba(0, 0, 0, 0.6);      /* Fundo escuro semi-transparente para legibilidade */
+  padding: 10px;                             /* Espaço interno */
+  border-radius: 5px;                        /* Bordas arredondadas */
 }
+
+
+/* Responsivo para telas pequenas */
+@media (max-width: 600px) {
+  .produto {
+    width: 90%;
+    height: auto;
+  }
+
+  .banner {
+    padding: 40px 10px;
+  }
+}
+
 
 /* Imagens específicas de fundo para cada produto */
 .destaque1 {
@@ -233,7 +263,6 @@ body {
   background-color: #a94f13; /* Cor mais escura */
 }
 
-
 .chamada{ 
 
 
@@ -246,7 +275,6 @@ body {
   gap: 40px; /* Espaço entre os elementos */
   border-radius: 6px;
 }
-
 
 .botao-contato{
 
@@ -263,15 +291,6 @@ body {
 .botao-contato:hover,
 .botao:hover {
   background-color: #b35916; /* Cor mais escura ao passar o mouse */
-}
-
-
-/* Geral */
-body {
-  font-family: 'Arial', sans-serif; /* Define a fonte da página */
-  background-color: #f4f4f4; /* Cor de fundo da página */
-  margin: 0; /* Remove a margem padrão do corpo da página */
-  padding: 0; /* Remove o padding padrão do corpo da página */
 }
 
 /* Cabeçalho da página */
@@ -462,25 +481,28 @@ body {
   color:white;
 }
 
+/* Estilo para o modal (janela de sobreposição) */
 #modal {
-  display: none;
-  position: fixed;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: rgba(0, 0, 0, 0.6);
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
+  display: none;                      /* Esconde o modal por padrão */
+  position: fixed;                   /* Fixa o modal em relação à tela */
+  top: 0; left: 0;                   /* Alinha o modal ao canto superior esquerdo */
+  width: 100%; height: 100%;         /* Ocupa toda a tela */
+  background: rgba(0, 0, 0, 0.6);     /* Fundo escuro semi-transparente */
+  justify-content: center;           /* Centraliza o conteúdo horizontalmente */
+  align-items: center;               /* Centraliza o conteúdo verticalmente */
+  z-index: 1000;                     /* Garante que fique acima dos outros elementos */
 }
 
+/* Estilo do conteúdo dentro do modal */
 .modal-content {
-  background: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  max-width: 400px;
-  width: 80%;
-  text-align: center;
+  background: #fff;                  /* Fundo branco para o conteúdo */
+  padding: 20px;                     /* Espaçamento interno */
+  border-radius: 10px;               /* Bordas arredondadas */
+  max-width: 400px;                  /* Largura máxima */
+  width: 80%;                        /* Largura relativa ao modal */
+  text-align: center;                /* Centraliza o texto dentro do conteúdo */
 }
+
 
 #fechar-modal{
   display: inline-block; /* Ocupa apenas o espaço do conteúdo */
@@ -516,23 +538,10 @@ body {
   font-weight: bold; /* Deixa os links em negrito */
 }
 
-
 /* Estilo para as categorias e produtos */
 .categoria {
   margin-top: 20px;
   background-color: #d2691e; /* Cor de fundo */
-}
-
-.produto {
-  border: 1px solid #ddd;
-  padding: 10px;
-  margin: 10px 0;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.produto:hover {
-  background-color: #f0f0f0;
 }
 
 /* Modal */
@@ -548,15 +557,182 @@ body {
   align-items: center;
 }
 
+/* Estilo do conteúdo modal */
 .modal-content {
-  background-color: white;
-  padding: 20px;
-  border-radius: 5px;
-  width: 80%;
-  max-width: 500px;
+  background-color: white;         /* Cor de fundo branca para o conteúdo */
+  padding: 20px;                   /* Espaçamento interno */
+  border-radius: 5px;              /* Bordas arredondadas */
+  width: 80%;                      /* Largura relativa ao elemento pai */
+  max-width: 500px;                /* Largura máxima fixa */
 }
 
+/* Centraliza o título dentro de elementos com a classe "center" */
+.center h2 {
+  text-align: center;              /* Alinha o texto ao centro */
+}
 
+/* Imagem e estilo para o item "Pão Francês" */
+.pao-frances {
+  background-image: url('../img/paes-frances.jpg');  /* Imagem de fundo */
+  background-size: cover;                            /* Imagem cobre todo o elemento */
+  background-position: center;                       /* Centraliza a imagem */
+  color: white;                                      /* Cor do texto */
+}
+
+/* Estilo para "Pão Integral" */
+.pao-integral {
+  background-image: url('../img/paes-integral.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+/* Estilo para "Pão Ciabatta" */
+.pao-ciabatta {
+  background-image: url('../img/paes-ciabatta.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+/* Estilo para "Pão Italiano" */
+.pao-italiano {
+  background-image: url('../img/paes-Italiano.jpeg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+/* Estilo para "Pão de Queijo" */
+.pao-de-queijo {
+  background-image: url('../img/pao-de-queijo.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+/* Estilo para "Bolo de Fubá" */
+.Bolo-de-Fubá {
+  background-image: url('../img/Bolo-de-Fuba.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+/* Estilo para "Bolo de Chocolate" */
+.Bolo-de-Chocolate {
+  background-image: url('../img/Bolo-de-Chocolate.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+/* Estilo para "Bolo de Cenoura" */
+.Bolo-de-Cenoura {
+  background-image: url('../img/Bolo-de-Cenoura.jpeg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+/* Estilo para "Bolo de Laranja" */
+.Bolo-de-Laranja {
+  background-image: url('../img/Bolo-de-Laranja.jpeg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+/* Estilo para "Bolo Red Velvet" */
+.Bolo-Red-Velvet {
+  background-image: url('../img/Bolo-Red-Velvet.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+/* Estilo para "Brigadeiro Gourmet" */
+.Brigadeiro-Gourmet {
+  background-image: url('../img/Brigadeiro-Gourmet.webp');
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+/* Estilo para "Mil Folhas" */
+.Mil-Folhas {
+  background-image: url('../img/Mil-Folhas.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+/* Estilo para "Torta de Morango" */
+.Torta-de-Morango {
+  background-image: url('../img/Torta-de-Morango.avif');
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+/* Estilo para "Pudim de Leite" */
+.Pudim-de-Leite {
+  background-image: url('../img/Pudim-de-Leite.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+/* Estilo para "Quindim" */
+.Quindim {
+  background-image: url('../img/Quindim.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+/* Estilo base para todos os cards */
+.item-card {
+  width: 250px;                                /* Largura fixa */
+  height: 300px;                               /* Altura fixa */
+  margin: 20px;                                /* Espaço ao redor */
+  padding: 20px;                               /* Espaçamento interno */
+  border-radius: 10px;                         /* Bordas arredondadas */
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);  /* Sombra leve */
+  display: inline-block;                       /* Exibição lado a lado */
+  vertical-align: top;                         /* Alinhamento no topo */
+  position: relative;                          /* Necessário para posicionamento interno */
+  cursor: pointer;                             /* Cursor em forma de mão ao passar o mouse */
+}
+
+/* Efeito ao passar o mouse sobre o card */
+.item-card:hover {
+  transform: scale(1.2);                       /* Aumenta o tamanho */
+}
+
+/* Efeito ao clicar no card */
+.item-card:active {
+  transform: scale(1.5);                       /* Aumenta mais ainda no clique */
+}
+
+/* Estilo do texto dentro do card */
+.item-card h3,
+.item-card p {
+  background-color: rgba(0, 0, 0, 0.6);        /* Fundo semi-transparente */
+  padding: 10px;                               /* Espaçamento interno */
+  border-radius: 5px;                          /* Bordas arredondadas */
+  color: white;                                /* Cor do texto */
+}
+
+/* Container de todos os itens */
+.itens-diversos {
+  display: flex;                               /* Layout flexível */
+  justify-content: center;                    /* Centraliza horizontalmente */
+  align-items: flex-start;                    /* Alinha itens no topo */
+  flex-wrap: wrap;                            /* Permite quebrar linha */
+  gap: 20px;                                   /* Espaço entre os itens */
+  padding: 20px;                               /* Espaçamento interno */
+}
 
 
   
