@@ -736,7 +736,7 @@ body {
   text-align: center; /* Centraliza o conteúdo */
   background-size: cover;                    /* Garante que a imagem de fundo cubra toda a área */
   padding: 20px;                             /* Espaçamento interno */
-  cursor: pointer;                           /* Muda o cursor ao passar sobre o item */
+  /*cursor: pointer;                           /* Muda o cursor ao passar sobre o item */
   background-image: url('../img/cozinha-industrial-para-padaria.webp'); /* Define uma imagem de fundo para o banner */
 }
 
