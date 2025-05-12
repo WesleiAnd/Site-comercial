@@ -33,8 +33,6 @@ body {
 .destaques {
   text-align: center; /* Centraliza o conteúdo */
   padding: 40px 20px; /* Espaçamento interno */
-  
-  
 }
 
 /* Título da seção de destaques */
@@ -264,8 +262,6 @@ body {
 }
 
 .chamada{ 
-
-
   display: flex; /* Layout em linha */
   align-items: center; /* Alinha os itens verticalmente */
   padding: 60px; /* Espaçamento interno */
@@ -442,9 +438,6 @@ body {
   background-color: #1ebc5b; /* Cor de fundo ao passar o mouse */
 }
 
-
-
-
 /* Link de Voltar */
 .voltar {
   text-align: center; /* Centraliza o link */
@@ -465,6 +458,7 @@ body {
   width: 100%; /* Os campos de texto ocupam 100% da largura disponível */
   padding: 1em; /* Espaçamento interno dentro dos campos */
   background-color: black; /* Cor clara de fundo */
+  
 }
 
 .final a {
@@ -737,6 +731,29 @@ body {
   width: 20%; /* 5 itens em 100% da largura */
   min-width: 100%; /* previne que fiquem minúsculos */
 }
+
+.videos{
+  text-align: center; /* Centraliza o conteúdo */
+  background-size: cover;                    /* Garante que a imagem de fundo cubra toda a área */
+  padding: 20px;                             /* Espaçamento interno */
+  cursor: pointer;                           /* Muda o cursor ao passar sobre o item */
+  background-image: url('../img/cozinha-industrial-para-padaria.webp'); /* Define uma imagem de fundo para o banner */
+}
+
+.videos p {
+  font-size: x-large;
+}
+
+
+  
+  
+  
+  
+  
+
+
+
+
 
 
 
